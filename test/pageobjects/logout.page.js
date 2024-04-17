@@ -4,12 +4,12 @@ import Page from './page.js';
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class LoginPage extends Page {
+class LogoutPage extends Page {
     /**
      * define selectors using getter methods
      */
-    get inputUsername () {
-        return $('#user-name');
+    get logoutLink () {
+        return $('#logout_sidebar_link');
     }
 
     get loginRedirectURL () {
@@ -27,15 +27,6 @@ class LoginPage extends Page {
     get headerError () {
         return $('h3[data-test="error"]');
     }
-
-    get btnLogin () {
-        return $('#login-button');
-    }
-
-    get loginCredentials () {
-        return $('#login_credentials');
-    }
-
 
     get checkoutStepOneURL () {
         return 'https://www.saucedemo.com/checkout-step-one.html'
@@ -62,4 +53,4 @@ class LoginPage extends Page {
     }
 }
 
-export default new LoginPage();
+export default new LogoutPage();

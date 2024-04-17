@@ -8,7 +8,7 @@ export default class Page {
     get loginPageURL () {
         return 'https://www.saucedemo.com/'
     }
-
+    
     get loginRedirectURL () {
         return 'https://www.saucedemo.com/inventory.html'
     }

@@ -25,6 +25,10 @@ class InventoryPage extends Page {
         return $('#inventory_container')
     }
 
+    get btnAddToCartBolt () {
+        return $('#add-to-cart-sauce-labs-bolt-t-shirt')
+    }
+
     get dropDownSort () {
         return $(".product_sort_container")
     }
@@ -39,33 +43,6 @@ class InventoryPage extends Page {
 
     get btnViewCart () {
         return $("#shopping_cart_container")
-    }
-
-    get btnCheckout () {
-        return $("#checkout")
-    }
-
-    async checkout (firstName, lastName, zipCode) {
-        await this.inputfirstName.setValue(firstName);
-        await this.inputlastName.setValue(lastName);
-        await this.inputzipCode.setValue(zipCode);
-        await this.btnContinue.click();
-    }
-
-    get inputfirstName () {
-        return $("#first-name")
-    }
-
-    get inputlastName () {
-        return $("#last-name")
-    }
-
-    get inputzipCode () {
-        return $("#postal-code")
-    }
-
-    get btnContinue () {
-        return $("#continue")
     }
 
 }
